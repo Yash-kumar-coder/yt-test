@@ -100,11 +100,11 @@ const ResultPage = () => {
           </div>
           
           <div className="flex items-center justify-between p-4 bg-red-50 rounded-2xl">
-            <div className="flex items-center gap-3">
-              <div className="bg-red-100 p-2 rounded-xl">
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="bg-red-100 p-2 rounded-xl shrink-0">
                 <XCircle className="text-red-500" size={24} />
               </div>
-              <span className="font-bold text-gray-700 text-lg">Wrong/Skipped</span>
+              <span className="font-bold text-gray-700 text-base md:text-lg">Incorrect / Skipped</span>
             </div>
             <span className="text-2xl font-bold text-red-500">{wrongAnswers}</span>
           </div>
@@ -172,9 +172,9 @@ const ResultPage = () => {
                     }
 
                     return (
-                      <div key={optIdx} className={`p-4 rounded-xl border flex items-center justify-between ${optStyle}`}>
-                        <div className="flex items-center gap-3">
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center font-medium text-sm bg-white shadow-sm ring-1 ring-inset ring-zinc-200
+                      <div key={optIdx} className={`p-4 rounded-xl border flex items-start sm:items-center justify-between gap-3 ${optStyle}`}>
+                        <div className="flex items-start sm:items-center gap-3 w-full">
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center font-medium text-sm bg-white shadow-sm ring-1 ring-inset ring-zinc-200 shrink-0 mt-0.5 sm:mt-0
                             ${optIdx === correctAns ? 'text-emerald-600' : optIdx === studentAns ? 'text-red-500' : 'text-zinc-400'}
                           `}>
                             {String.fromCharCode(65 + optIdx)}

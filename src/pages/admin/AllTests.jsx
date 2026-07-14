@@ -63,7 +63,7 @@ const AllTests = () => {
 
       <Card className="p-0 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
+          <table className="w-full text-left border-collapse min-w-[600px]">
             <thead>
               <tr className="bg-zinc-50/50 border-b border-zinc-200">
                 <th className="px-6 py-4 font-semibold text-zinc-500 text-xs uppercase tracking-wider">Test</th>

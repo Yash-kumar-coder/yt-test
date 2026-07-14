@@ -122,7 +122,7 @@ const TestPage = () => {
 
       {/* Question Card */}
       <Card className="mb-8 p-6 md:p-10">
-        <h2 className="text-xl md:text-xl text-zinc-950 font-semibold mb-6 md:mb-8 leading-relaxed tracking-tight">
+        <h2 className="text-lg md:text-xl text-zinc-950 font-semibold mb-6 md:mb-8 leading-relaxed tracking-tight">
           {currentIdx + 1}. {currentQ.question}
         </h2>
         
@@ -141,9 +141,9 @@ const TestPage = () => {
                   }
                 `}
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-start sm:items-center gap-3 md:gap-4">
                   <div className={`
-                    w-8 h-8 rounded-full flex items-center justify-center font-medium text-sm transition-colors
+                    w-8 h-8 rounded-full flex items-center justify-center font-medium text-sm transition-colors shrink-0 mt-0.5 sm:mt-0
                     ${isSelected ? 'bg-zinc-950 text-white' : 'bg-zinc-100 text-zinc-500'}
                   `}>
                     {String.fromCharCode(65 + idx)}
