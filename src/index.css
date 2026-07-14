@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-gray-900 antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .rounded-20 {
+    border-radius: 16px;
+  }
+  
+  .shadow-soft {
+    @apply shadow-premium;
+  }
+
+  .shadow-soft-hover {
+    @apply shadow-premium-hover;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-premium-hover;
+  }
+}
