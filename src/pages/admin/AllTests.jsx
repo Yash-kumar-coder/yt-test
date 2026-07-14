@@ -41,10 +41,10 @@ const AllTests = () => {
 
   return (
     <div className="max-w-6xl mx-auto animate-fade-in pb-12">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-zinc-950 tracking-tight">All Tests</h1>
-          <p className="text-zinc-500 mt-2">Manage your published tests.</p>
+          <h1 className="text-2xl md:text-3xl font-bold text-zinc-950 tracking-tight">All Tests</h1>
+          <p className="text-sm md:text-base text-zinc-500 mt-1 md:mt-2">Manage your published tests.</p>
         </div>
         
         <div className="relative w-full md:w-96">
